@@ -31,7 +31,7 @@ const mongoose = require('mongoose')
 const user = require('./models/user')
 
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp'
-// 'mongodb://localhost:27017/yelp-camp'
+// i.e to use mongo atlas instead of local database
 
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
